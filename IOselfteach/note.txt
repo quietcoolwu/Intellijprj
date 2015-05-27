@@ -95,6 +95,9 @@ private void writeObject(java.io.ObjectOutputStream s)
         this.stuAge = s.readInt();//自己完成反序列化操作
     }
 
-    分析arraylist序列化与反序列化的问题
+    以上对应分析arraylist序列化与反序列化的问题
+
+
+5)序列化中子类和父类构造函数的调用
 
 
