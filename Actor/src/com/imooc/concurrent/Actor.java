@@ -6,7 +6,7 @@ package com.imooc.concurrent;
 public class Actor extends Thread{
 
     public void run(){
-        System.out.println(getName()+"是一个演员!");
+        //System.out.println(getName()+"是一个演员!");
         int count = 0;
         boolean keepRunning = true;
         while(keepRunning){
