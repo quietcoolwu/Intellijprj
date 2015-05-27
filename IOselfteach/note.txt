@@ -81,5 +81,20 @@ bufferedreader--->一次读一行
   对象必须实现序列化接口才能进行序列化,否则将出现异常.
   没有任何实现接口的方法,只是一个标准
 
+4)transient关键字
+private void writeObject(java.io.ObjectOutputStream s)
+            throws java.io.IOException {
+        s.defaultWriteObject();//把jvm默认能进行序列化的元素序列化
+        s.writeInt(stuAge);//自己完成stuAge的序列化
+        //ArrayList
+    }
+
+    private void readObject(java.io.ObjectInputStream s)
+            throws java.io.IOException, ClassNotFoundException {
+        s.defaultReadObject();//把jvm默认能反序列话的元素进行反序列化
+        this.stuAge = s.readInt();//自己完成反序列化操作
+    }
+
+    分析arraylist序列化与反序列化的问题
 
 
