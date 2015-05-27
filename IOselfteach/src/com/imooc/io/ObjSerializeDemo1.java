@@ -14,11 +14,11 @@ public class ObjSerializeDemo1 {
     public static void main(String[] args) throws Exception {
         String file = "demo/obj.dat";
         //对象的序列化
-        ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(file));
-        Student stu = new Student("10001", "张三", 20);
-        oos.writeObject(stu);
-        oos.flush();
-        oos.close();
+//        ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(file));
+//        Student stu = new Student("10001", "张三", 20);
+//        oos.writeObject(stu);
+//        oos.flush();
+//        oos.close();
 
 
         //对象的反序列化
